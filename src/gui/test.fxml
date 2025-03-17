@@ -10,9 +10,7 @@
    <content>
       <VBox prefHeight="298.0" prefWidth="468.0">
          <children>
-         
             <MenuBar>
-            
               <menus>
                 <Menu mnemonicParsing="false" text="Registration">
                   <items>
@@ -26,9 +24,7 @@
                   </items>
                 </Menu>
               </menus>
-              
             </MenuBar>
-            
          </children>
       </VBox>
    </content>
