@@ -12,7 +12,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentListController">
    <children>
-      <Label prefHeight="61.0" prefWidth="269.0" text="DEPARTMENT REGISTRANTION">
+      <Label prefHeight="61.0" prefWidth="269.0" text="DEPARTMENT REGISTRATION">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
