@@ -42,6 +42,9 @@ import model.services.DepartmentService;
  	@FXML
  	private Button btNew;
  	
+ 	@FXML
+ 	private Button btReload;
+ 	
  	private ObservableList<Department> obsList;
  	
  	@FXML
@@ -49,6 +52,12 @@ import model.services.DepartmentService;
  		Stage parentStage = Utils.currentStage(event);
  		Department obj = new Department();
  		createDialogForm(obj, "/gui/DepartmentForm.fxml", parentStage);
+ 	}
+ 	
+ 	@FXML
+ 	public void reloadPanel() {
+ 		initializeNodes();
+ 		updateTableView();
  	}
  	
  	public void setDepartmentService(DepartmentService service) {
@@ -86,6 +95,7 @@ import model.services.DepartmentService;
  			
  			DepartmentFormController controller = loader.getController();
  			controller.setDepartment(obj);
+ 			controller.setDepartmentService(new DepartmentService());
  			controller.updateFormData();
  			
  			Stage dialogStage = new Stage();
@@ -101,6 +111,8 @@ import model.services.DepartmentService;
 			e.printStackTrace();
 		}
  	}
+ 	
+ 	
  	
  	
  	
